@@ -84,6 +84,8 @@
             android:layout_marginHorizontal="30dp"
             />
         <TextView
+            android:layout_marginTop="15dp"
+            android:drawableRight="@mipmap/ic_next"
             android:textSize="25sp"
             android:textColor="#fff"
             android:gravity="center"
