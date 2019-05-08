@@ -18,7 +18,8 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:src="@mipmap/img_logo"
-
+        android:scaleX="0.8"
+        android:scaleY="0.8"
         android:layout_marginHorizontal="30dp"
 
         />
@@ -83,8 +84,11 @@
             android:layout_marginHorizontal="30dp"
             />
         <TextView
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="ĐĂNG NHẬP"
              android:background="@drawable/red_round_background"
             android:layout_marginHorizontal="30dp"
@@ -101,19 +105,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_gravity="center"
             >
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
 
-                android:src="@mipmap/ic_fb"
-                />
+                android:src="@mipmap/ic_fb" />
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
 
-                android:src="@mipmap/ic_gg"
-                />
+                android:src="@mipmap/ic_gg" />
 
 
     </LinearLayout>
