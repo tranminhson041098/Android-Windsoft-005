@@ -52,9 +52,9 @@
             <ImageView
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/img_app"
+                android:src="@drawable/avatar"
                 android:layout_marginLeft="20dp"
-                android:scaleY="1.1"
+                android:scaleY="1"
 
                 />
 
