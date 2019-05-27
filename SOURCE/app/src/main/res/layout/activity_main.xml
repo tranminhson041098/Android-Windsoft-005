@@ -67,12 +67,11 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:text="TRẦN MINH SƠN"
-                    android:textStyle="bold"
-                    android:textSize="27sp"
+                    android:layout_height="51dp"
                     android:gravity="center"
-                    />
+                    android:text="TRẦN MINH SƠN"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
