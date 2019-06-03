@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.squareup.picasso.Picasso;
 
-public class MainActivity extends AppCompatActivity {
+
+public class UserInfoActivity extends AppCompatActivity {
 // khoi tao code cho file Source
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
     void getdata()
     {
+
+
 
     }
 }

@@ -37,8 +37,22 @@ public class LoginActivity extends AppCompatActivity {
                 checkValid();
                 if (checkValid())
                 {
-                    Intent intent =new Intent(LoginActivity.this,MainActivity.class);
+
+                    Intent intent =new Intent(LoginActivity.this, HomeActivity.class);
+
+                    User user;
+                    user = new User();
+                    user.setId(1);
+                    user.setUsername("Trần Sơn");
+                    user.setPhoneNumber("0912230109");
+                    intent.putExtra("user",user);
+
+                    //maybe gọi trực tiếp hàm
+                    AppConfig.setPhoneNumber(edtPhoneNumber.getText().toString(),LoginActivity.this);
+
+                    //lưu số điện thoại lần sau vào thẳng main user
                     startActivity(intent);
+                    finish();
 
                 }
                 else
@@ -49,6 +63,21 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+    /*
+    //Học về Shared Preferences
+    void setPhoneNumber()
+    {
+        //tạo 1 đối truong share pre , nếu chjuwa có thì tạo mới , nếu có r thì lấy ra trực tiếp luôn
+        SharedPreferences sharedPreferences = getSharedPreferences("Android005",MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        //tương tự truyền dữ liệu vô intent
+        editor.putString("phone_number",edtPhoneNumber.getText().toString());
+        //Cập nhật
+        editor.apply();
+
+
+    }
+    */
 
     boolean checkValid()
     {

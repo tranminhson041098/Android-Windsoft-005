@@ -308,6 +308,7 @@
                     app:cardCornerRadius="15dp">
 
                     <ImageView
+                        android:id="@+id/img_one"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:scaleType="center"
@@ -315,6 +316,7 @@
                         android:src="@drawable/img_may_bom" />
 
                     <TextView
+                        android:id="@+id/tv_news_one"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -348,6 +350,8 @@
                     app:cardCornerRadius="15dp">
 
                     <ImageView
+
+                        android:id="@+id/img_two"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:scaleType="center"
@@ -356,6 +360,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_news_two"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -389,6 +394,7 @@
                     app:cardCornerRadius="15dp">
 
                     <ImageView
+                        android:id="@+id/img_three"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
@@ -396,6 +402,7 @@
                         android:src="@drawable/img_may_bom" />
 
                     <TextView
+                        android:id="@+id/tv_news_three"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -439,12 +446,14 @@
                 app:cardCornerRadius="15dp">
 
                 <ImageView
+                    android:id="@+id/img_four"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/img_ong_2" />
 
                 <TextView
+                    android:id="@+id/tv_news_four"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="#65554242"
@@ -477,12 +486,14 @@
                 app:cardCornerRadius="15dp">
 
                 <ImageView
+                    android:id="@+id/img_five"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:src="@drawable/img_ong_nhua" />
 
                 <TextView
+                    android:id="@+id/tv_news_five"
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
