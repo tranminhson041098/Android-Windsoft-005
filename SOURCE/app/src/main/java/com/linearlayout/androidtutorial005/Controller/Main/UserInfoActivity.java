@@ -1,11 +1,9 @@
-package com.linearlayout.androidtutorial005;
+package com.linearlayout.androidtutorial005.Controller.Main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.EditText;
-import android.widget.Toast;
 
-import com.squareup.picasso.Picasso;
+import com.linearlayout.androidtutorial005.R;
 
 
 public class UserInfoActivity extends AppCompatActivity {

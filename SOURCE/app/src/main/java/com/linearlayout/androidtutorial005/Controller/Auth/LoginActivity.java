@@ -1,13 +1,18 @@
-package com.linearlayout.androidtutorial005;
+package com.linearlayout.androidtutorial005.Controller.Auth;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.linearlayout.androidtutorial005.Controller.Main.HomeActivity;
+import com.linearlayout.androidtutorial005.Model.User;
+import com.linearlayout.androidtutorial005.R;
+import com.linearlayout.androidtutorial005.Utils.AppConfig;
 
 public class LoginActivity extends AppCompatActivity {
     EditText edtPhoneNumber;
@@ -48,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                     intent.putExtra("user",user);
 
                     //maybe gọi trực tiếp hàm
-                    AppConfig.setPhoneNumber(edtPhoneNumber.getText().toString(),LoginActivity.this);
+                    AppConfig.setPhoneNumber(edtPhoneNumber.getText().toString(), LoginActivity.this);
 
                     //lưu số điện thoại lần sau vào thẳng main user
                     startActivity(intent);

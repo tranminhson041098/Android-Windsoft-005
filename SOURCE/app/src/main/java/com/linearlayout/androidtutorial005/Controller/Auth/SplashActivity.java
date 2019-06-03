@@ -1,10 +1,14 @@
-package com.linearlayout.androidtutorial005;
+package com.linearlayout.androidtutorial005.Controller.Auth;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
+import com.linearlayout.androidtutorial005.Controller.Main.HomeActivity;
+import com.linearlayout.androidtutorial005.Model.User;
+import com.linearlayout.androidtutorial005.R;
+import com.linearlayout.androidtutorial005.Utils.AppConfig;
 
 public class SplashActivity extends AppCompatActivity {
 

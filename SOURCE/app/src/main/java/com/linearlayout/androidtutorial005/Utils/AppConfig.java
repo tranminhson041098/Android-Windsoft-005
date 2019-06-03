@@ -1,4 +1,4 @@
-package com.linearlayout.androidtutorial005;
+package com.linearlayout.androidtutorial005.Utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

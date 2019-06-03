@@ -1,19 +1,14 @@
-package com.linearlayout.androidtutorial005;
+package com.linearlayout.androidtutorial005.Controller.Main;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.linearlayout.androidtutorial005.Model.HomeData;
-import com.squareup.picasso.Picasso;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.linearlayout.androidtutorial005.R;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,6 +18,7 @@ public class HomeActivity extends AppCompatActivity
     HomeData homeData;
     TextView tvUsername, tvPhoneNumber ,tvNews1,tvNews2,tvNews3,tvNews4,tvNews5;
     ImageView imgInfo1, imgInfo2, imgInfo3, imgInfo4 , imgInfo5;
+    RecyclerView rvNews;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
@@ -85,19 +81,6 @@ public class HomeActivity extends AppCompatActivity
     }
     void init()
     {
-        tvUsername = findViewById(R.id.tv_user_name);
-        tvPhoneNumber=findViewById(R.id.tv_phone_number);
-        tvNews1=findViewById(R.id.tv_news_one);
-        tvNews2=findViewById(R.id.tv_news_two);
-        tvNews3=findViewById(R.id.tv_news_three);
-        tvNews4=findViewById(R.id.tv_news_four);
-        tvNews5=findViewById(R.id.tv_news_five);
-        imgInfo1=findViewById(R.id.img_one);
-        imgInfo2=findViewById(R.id.img_two);
-        imgInfo3=findViewById(R.id.img_three);
-        imgInfo4=findViewById(R.id.img_four);
-        imgInfo5=findViewById(R.id.img_five);
-
-
+         rvNews = findViewById(R.id.rv_news);
     }
 }

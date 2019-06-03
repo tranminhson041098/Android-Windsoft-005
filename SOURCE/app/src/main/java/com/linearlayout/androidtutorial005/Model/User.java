@@ -1,4 +1,4 @@
-package com.linearlayout.androidtutorial005;
+package com.linearlayout.androidtutorial005.Model;
 
 import java.io.Serializable;
 
