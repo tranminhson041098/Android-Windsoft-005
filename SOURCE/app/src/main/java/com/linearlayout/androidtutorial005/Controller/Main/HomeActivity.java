@@ -8,13 +8,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.linearlayout.androidtutorial005.Model.HomeData;
+import com.linearlayout.androidtutorial005.Model.News;
 import com.linearlayout.androidtutorial005.R;
 import com.linearlayout.androidtutorial005.Utils.Utils;
+import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -56,38 +59,40 @@ public class HomeActivity extends AppCompatActivity {
     void configRvNews() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         rvNews.setLayoutManager(linearLayoutManager);
-        RecyclerView.Adapter adapter = new RecyclerView.Adapter() {
-
-
-            @NonNull
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-                View view = LayoutInflater.from(HomeActivity.this).inflate(R.layout.news_item_layout, viewGroup, false);
-                RecyclerView.ViewHolder viewHolder = new RecyclerView.ViewHolder(view) {
-                    @Override
-                    public String toString() {
-
-                        return super.toString();
-
-                    }
-                };
-
-
-              //  return viewHolder;
-           return null;
-
-            }
-
-            @Override
-            public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
-
-            }
-
-            @Override
-            public int getItemCount() {
-                return homeData.getResult().getListNews().size();
-            }
-        };
-        rvNews.setAdapter(adapter);
+//        RecyclerView.Adapter adapter = new RecyclerView.Adapter() {
+//
+//
+//            @NonNull
+//            @Override
+//            public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+//                View view = LayoutInflater.from(HomeActivity.this).inflate(R.layout.news_item_layout, viewGroup, false);
+//
+////Cách kết hợp view holder để có thể chỉnh sửa
+//
+//                NewsViewHolder viewHolder = new NewsViewHolder(view);
+//
+//              //  return viewHolder;
+//           return viewHolder;
+//
+//            }
+//
+//            @Override
+//            public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
+//
+//                News news = homeData.getResult().getListNews().get(i);
+//                //ép kiểu
+//                ((NewsViewHolder)viewHolder).tvTitle.setText(news.getTitle());
+//                Picasso.get().load(news.getUrlImage()).into(((NewsViewHolder)viewHolder).imgBg);
+//            }
+//
+//
+//            @Override
+//            public int getItemCount() {
+//                return homeData.getResult().getListNews().size();
+//            }
+//        };
+//        rvNews.setAdapter(adapter);
     }
+
+
 }

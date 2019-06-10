@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -19,6 +20,7 @@
         android:textSize="30sp"
         />
     <Button
+        android:id="@+id/btn_detail"
         android:layout_marginTop="200dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
