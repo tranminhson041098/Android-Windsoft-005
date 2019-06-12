@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.linearlayout.androidtutorial005.Controller.Main.Adapter.NewsAdapter;
+import com.linearlayout.androidtutorial005.Controller.Main.Adapter.PromotionAdapter;
 import com.linearlayout.androidtutorial005.Model.HomeData;
 import com.linearlayout.androidtutorial005.Model.News;
 import com.linearlayout.androidtutorial005.R;
@@ -29,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     HomeData homeData;
     TextView tvUsername, tvPhoneNumber, tvNews1, tvNews2, tvNews3, tvNews4, tvNews5;
     ImageView imgInfo1, imgInfo2, imgInfo3, imgInfo4, imgInfo5;
-    RecyclerView rvNews;
+    RecyclerView rvNews,rvPromotion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class HomeActivity extends AppCompatActivity {
         init();
         docJson();
         configRvNews();
+        configRvPromotion();
 
     }
 
@@ -56,6 +58,7 @@ public class HomeActivity extends AppCompatActivity {
     //
     void init() {
         rvNews = findViewById(R.id.rv_news);
+        rvPromotion=findViewById(R.id.rv_promotion);
 
     }
 
@@ -99,6 +102,14 @@ public class HomeActivity extends AppCompatActivity {
 //            }
 //        };
 //        rvNews.setAdapter(adapter);
+    }
+    private void configRvPromotion() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        rvPromotion.setLayoutManager(linearLayoutManager);
+        PromotionAdapter promotionAdapter = new PromotionAdapter();
+        promotionAdapter.setData(homeData.getResult().getListPromotion());
+        promotionAdapter.setContext(this);
+        rvPromotion.setAdapter(promotionAdapter);
     }
 
 

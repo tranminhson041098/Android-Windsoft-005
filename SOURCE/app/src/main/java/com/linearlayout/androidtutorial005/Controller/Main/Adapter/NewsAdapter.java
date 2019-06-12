@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.linearlayout.androidtutorial005.Model.News;
+import com.linearlayout.androidtutorial005.Model.Promotion;
 import com.linearlayout.androidtutorial005.R;
 
 import java.util.List;
@@ -19,6 +20,7 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
 
     public List<News> data;
     Context context;
+    public List<Promotion> data1;
 
     public void setContext(Context context) {
         this.context = context;
