@@ -8,11 +8,13 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
+import com.linearlayout.androidtutorial005.Controller.Main.Adapter.NewsAdapter;
 import com.linearlayout.androidtutorial005.Model.HomeData;
 import com.linearlayout.androidtutorial005.Model.News;
 import com.linearlayout.androidtutorial005.R;
@@ -21,6 +23,7 @@ import com.squareup.picasso.Picasso;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
     HomeData homeData;
@@ -59,6 +62,10 @@ public class HomeActivity extends AppCompatActivity {
     void configRvNews() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         rvNews.setLayoutManager(linearLayoutManager);
+        NewsAdapter adapter = new NewsAdapter();
+        adapter.setData(homeData.getResult().getListNews());
+        adapter.setContext(this);
+        rvNews.setAdapter(adapter);
 //        RecyclerView.Adapter adapter = new RecyclerView.Adapter() {
 //
 //
